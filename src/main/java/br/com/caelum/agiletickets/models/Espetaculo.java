@@ -101,10 +101,10 @@ public class Espetaculo {
      */
 	public List<Sessao> criaSessoes(LocalDate inicio, LocalDate fim, LocalTime horario, Periodicidade periodicidade) {
 		List<Sessao> sessoes = new ArrayList();
-/*		
+		
 		if (fim.isBefore(inicio)){
 			throw new IllegalArgumentException("Data de inicio não pode ser maior do que a data fim");
-		}*/
+		}
 
 		if (periodicidade.equals(periodicidade.DIARIA)){
 			int dias = Days.daysBetween(inicio, fim).getDays();
