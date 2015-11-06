@@ -46,18 +46,6 @@ public class EspetaculosControllerTest {
 	}
 
 	@Test
-	public void criaSessaoDataInicioPosteriorDataFim(){
-		Espetaculo espetaculo = new Espetaculo();
-		LocalDate inicio = new LocalDate();
-		LocalDate fim = inicio.minusDays(5);
-		Periodicidade periodicidade = Periodicidade.DIARIA;
-		LocalTime horario = new LocalTime();
-		List<Sessao> sessoes = espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
-		
-		Assert.assertEquals(0, sessoes.size());
-	}
-	
-	@Test
 	public void cria4SessoesPeriodoValidoPeriodicidadeDiaria(){
 		Espetaculo espetaculo = new Espetaculo();
 		LocalDate inicio = new LocalDate();
