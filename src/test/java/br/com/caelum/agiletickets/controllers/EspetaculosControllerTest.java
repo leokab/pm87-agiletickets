@@ -45,7 +45,7 @@ public class EspetaculosControllerTest {
 		controller = new EspetaculosController(result, validator, agenda, estabelecimentos);
 	}
 
-/*	@Test
+	@Test
 	public void criaSessaoDataInicioPosteriorDataFim(){
 		Espetaculo espetaculo = new Espetaculo();
 		LocalDate inicio = new LocalDate();
@@ -55,7 +55,7 @@ public class EspetaculosControllerTest {
 		List<Sessao> sessoes = espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
 		
 		Assert.assertEquals(0, sessoes.size());
-	}*/
+	}
 	
 	@Test
 	public void cria4SessoesPeriodoValidoPeriodicidadeDiaria(){
